@@ -1,20 +1,37 @@
 [
   {
+    "id": "holy_water",
     "name": "Holy Water",
-    "category": "Blessings",
-    "description": "Water blessed by a priest used for protection and blessings.",
-    "image": "holy_water.jpg"
+    "category": "Blessing",
+    "image": "holy_water.png",
+    "description": "Water blessed by a priest, used for blessings, protection, and recalling Baptism."
   },
   {
-    "name": "Scapular",
-    "category": "Devotional",
-    "description": "A sacramental worn as a sign of devotion and protection.",
-    "image": "scapular.jpg"
-  },
-  {
+    "id": "rosary",
     "name": "Rosary",
     "category": "Prayer",
-    "description": "A string of beads used for prayer and meditation.",
-    "image": "rosary.jpg"
+    "image": "rosary.png",
+    "description": "Beads used to meditate on the Mysteries of Christ and the Virgin Mary."
+  },
+  {
+    "id": "scapular",
+    "name": "Scapular",
+    "category": "Devotional",
+    "image": "scapular.png",
+    "description": "A devotional garment signifying dedication and a call to Christian living."
+  },
+  {
+    "id": "miraculous_medal",
+    "name": "Miraculous Medal",
+    "category": "Medal",
+    "image": "miraculous_medal.png",
+    "description": "A medal of the Blessed Virgin Mary associated with St. Catherine Labouré."
+  },
+  {
+    "id": "blessed_salt",
+    "name": "Blessed Salt",
+    "category": "Blessing",
+    "image": "blessed_salt.png",
+    "description": "Salt blessed by a priest; sometimes used together with holy water."
   }
 ]
