@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Holy Water",
+    "category": "Blessings",
+    "description": "Water blessed by a priest used for protection and blessings.",
+    "image": "holy_water.jpg"
+  },
+  {
+    "name": "Scapular",
+    "category": "Devotional",
+    "description": "A sacramental worn as a sign of devotion and protection.",
+    "image": "scapular.jpg"
+  },
+  {
+    "name": "Rosary",
+    "category": "Prayer",
+    "description": "A string of beads used for prayer and meditation.",
+    "image": "rosary.jpg"
+  }
+]
