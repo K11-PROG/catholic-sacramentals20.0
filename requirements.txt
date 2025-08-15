@@ -1,3 +1,1 @@
-streamlit>=1.36.0
-Pillow>=9.0.0
-streamlit-javascript>=0.1.5
+streamlit
