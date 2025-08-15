@@ -1,7 +1,7 @@
 {
   "title": "Encyclopédie des Sacramentaux Catholiques",
-  "subtitle": "Phase 4 : détection automatique de la langue, interface améliorée et liste étendue.",
-  "search_placeholder": "Rechercher (nom ou description)",
+  "subtitle": "Phase 5 : multilingue (EN/FR/ES/IT/TL) + contenu enrichi et images locales.",
+  "search_placeholder": "Rechercher (nom, description ou source)",
   "category_all": "Tous",
   "language_label": "Langue",
   "category_label": "Catégorie",

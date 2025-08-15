@@ -1,0 +1,10 @@
+{
+  "title": "Enciclopedia dei Sacramentali Cattolici",
+  "subtitle": "Fase 5: multilingue (EN/FR/ES/IT/TL) + contenuti ampliati e immagini locali.",
+  "search_placeholder": "Cerca (nome, descrizione o fonte)",
+  "category_all": "Tutti",
+  "language_label": "Lingua",
+  "category_label": "Categoria",
+  "showing": "Mostra {shown} di {total}",
+  "no_results": "Nessun sacramentale corrisponde alla tua ricerca."
+}

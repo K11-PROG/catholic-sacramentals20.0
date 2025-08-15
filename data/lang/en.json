@@ -1,7 +1,7 @@
 {
   "title": "Catholic Sacramentals Encyclopedia",
-  "subtitle": "Phase 4: auto-language detection, polished UI, and expanded list.",
-  "search_placeholder": "Search (name or description)",
+  "subtitle": "Phase 5: multilingual (EN/FR/ES/IT/TL) + richer content and local images.",
+  "search_placeholder": "Search (name, description, or source)",
   "category_all": "All",
   "language_label": "Language",
   "category_label": "Category",

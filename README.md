@@ -1,15 +1,3 @@
-# Catholic Sacramentals — Phase 4 (Lean)
+# Catholic Sacramentals — Phase 5
 
-Features:
-- Auto-language detection (via browser) + manual override (EN/FR)
-- Expanded list (~16 items) with local stock-like images in `assets/`
-- Horizontal scroll category bar with icons; combined search + filter
-- Clean, responsive cards and mobile-friendly layout
-
-## Run locally
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-streamlit run app.py
-```
+Phase 5: multilingual, richer data, local realistic-style images (placeholders). Deploy with Streamlit Cloud.
