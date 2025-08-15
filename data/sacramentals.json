@@ -1,20 +1,114 @@
 [
   {
+    "id": "holy_water",
     "name": "Holy Water",
-    "description": "Water blessed by a priest used for blessing and protection.",
     "category": "Blessing",
-    "image": "holy_water.jpg"
+    "image": "holy_water.png",
+    "description": "Water blessed by a priest; used for blessings, protection, and recalling Baptism."
   },
   {
+    "id": "blessed_salt",
+    "name": "Blessed Salt",
+    "category": "Blessing",
+    "image": "salt.png",
+    "description": "Salt blessed by a priest; sometimes used with holy water in certain blessings."
+  },
+  {
+    "id": "blessed_oil",
+    "name": "Blessed Oil",
+    "category": "Blessing",
+    "image": "oil.png",
+    "description": "Oil blessed for use in certain devotional practices and blessings."
+  },
+  {
+    "id": "ashes",
+    "name": "Ashes (Ash Wednesday)",
+    "category": "Seasonal",
+    "image": "ash.png",
+    "description": "Blessed ashes placed on the forehead as a sign of repentance at the start of Lent."
+  },
+  {
+    "id": "incense",
+    "name": "Incense",
+    "category": "Blessing",
+    "image": "incense.png",
+    "description": "Fragrant resin burned as a sign of reverence; symbolizes prayer rising to God."
+  },
+  {
+    "id": "rosary",
     "name": "Rosary",
-    "description": "Beads used to count prayers, especially in devotion to the Virgin Mary.",
     "category": "Prayer",
-    "image": "rosary.jpg"
+    "image": "rosary.png",
+    "description": "Prayer beads to meditate on the Mysteries of Christ and Our Lady."
   },
   {
+    "id": "bible",
+    "name": "Bible",
+    "category": "Prayer",
+    "image": "bible.png",
+    "description": "The Sacred Scriptures; lectio divina and prayerful reading are powerful devotions."
+  },
+  {
+    "id": "scapular",
     "name": "Scapular",
-    "description": "A devotional garment symbolizing commitment to the faith.",
     "category": "Devotional",
-    "image": "scapular.jpg"
+    "image": "scapular.png",
+    "description": "A devotional garment signifying dedication and a call to Christian living."
+  },
+  {
+    "id": "miraculous_medal",
+    "name": "Miraculous Medal",
+    "category": "Medal",
+    "image": "medal_miraculous.png",
+    "description": "A medal of the Blessed Virgin Mary associated with St. Catherine Labouré."
+  },
+  {
+    "id": "st_benedict_medal",
+    "name": "St. Benedict Medal",
+    "category": "Medal",
+    "image": "medal_benedict.png",
+    "description": "A medal invoking the protection and intercession of St. Benedict."
+  },
+  {
+    "id": "palm",
+    "name": "Palm (Palm Sunday)",
+    "category": "Seasonal",
+    "image": "palm.png",
+    "description": "Blessed palm branches kept as a sign of Christ’s victory."
+  },
+  {
+    "id": "votive_candle",
+    "name": "Votive Candle",
+    "category": "Object",
+    "image": "candle.png",
+    "description": "A blessed candle lit as a sign of ongoing prayer and devotion."
+  },
+  {
+    "id": "processional_cross",
+    "name": "Processional Cross",
+    "category": "Object",
+    "image": "cross.png",
+    "description": "Cross carried in processions; a sign of Christ’s saving Passion."
+  },
+  {
+    "id": "altar",
+    "name": "Altar",
+    "category": "Object",
+    "image": "altar.png",
+    "description": "A consecrated table for the Eucharistic sacrifice; focal point of the church."
+  },
+  {
+    "id": "agnus_dei",
+    "name": "Agnus Dei (Wax)",
+    "category": "Devotional",
+    "image": "agnus_dei.png",
+    "description": "A blessed wax disk with the Lamb of God motif; devotional sacramental."
+  },
+  {
+    "id": "holy_card",
+    "name": "Holy Card",
+    "category": "Devotional",
+    "image": "holy_card.png",
+    "description": "Small devotional image with prayers or saints, used for meditation and inspiration."
   }
 ]

@@ -1,6 +1,10 @@
 {
   "title": "Catholic Sacramentals Encyclopedia",
+  "subtitle": "Phase 4: auto-language detection, polished UI, and expanded list.",
+  "search_placeholder": "Search (name or description)",
   "category_all": "All",
-  "search": "Search",
-  "select_language": "Select Language"
+  "language_label": "Language",
+  "category_label": "Category",
+  "showing": "Showing {shown} of {total}",
+  "no_results": "No sacramentals match your search."
 }

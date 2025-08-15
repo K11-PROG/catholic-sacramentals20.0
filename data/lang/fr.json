@@ -1,6 +1,10 @@
 {
-  "title": "Encyclop\u00e9die des Sacramentaux Catholiques",
+  "title": "Encyclopédie des Sacramentaux Catholiques",
+  "subtitle": "Phase 4 : détection automatique de la langue, interface améliorée et liste étendue.",
+  "search_placeholder": "Rechercher (nom ou description)",
   "category_all": "Tous",
-  "search": "Rechercher",
-  "select_language": "Choisir la langue"
+  "language_label": "Langue",
+  "category_label": "Catégorie",
+  "showing": "Affichage {shown} sur {total}",
+  "no_results": "Aucun sacramental ne correspond à votre recherche."
 }

@@ -1,10 +1,10 @@
-# Catholic Sacramentals — Phase 1
+# Catholic Sacramentals — Phase 4 (Lean)
 
-Visual, mobile-friendly Streamlit app with:
-- Horizontal, scrollable category bar with icons
-- "All" option
-- Search + filter combined
-- Image fallback placeholder
+Features:
+- Auto-language detection (via browser) + manual override (EN/FR)
+- Expanded list (~16 items) with local stock-like images in `assets/`
+- Horizontal scroll category bar with icons; combined search + filter
+- Clean, responsive cards and mobile-friendly layout
 
 ## Run locally
 ```bash
@@ -13,7 +13,3 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
-## Deploy on Streamlit Cloud
-- App file: `app.py`
-- Python version: default
