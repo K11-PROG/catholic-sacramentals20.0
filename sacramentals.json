@@ -4,115 +4,83 @@
     "name": "Holy Water",
     "category": "Blessings",
     "image": "holy_water.png",
-    "description": "Water blessed by a priest or deacon, used for making the Sign of the Cross, blessing persons, homes, and objects, and recalling Baptism. Ancient use in Christianity is attested by the 2nd–3rd centuries. Variations include Easter Water (blessed in the Easter Vigil) and water used with blessed salt.",
-    "variations": [
-      "Easter Water",
-      "Blessed Water with Salt"
-    ]
+    "description": "Water blessed by a priest or deacon, used for making the Sign of the Cross, blessing persons and homes, and recalling Baptism. Attested in the Church by the 2nd–3rd centuries; formulas varied regionally. Variations: Easter Water (Easter Vigil) and water with blessed salt."
   },
   {
     "slug": "rosary",
     "name": "Rosary",
     "category": "Devotional Articles",
     "image": "rosary.png",
-    "description": "A string of beads used to count prayers while meditating on the mysteries of Christ. Traditionally associated with St. Dominic (13th c.), the Rosary developed from earlier psalter-like devotions. Widely promoted since the 16th century.",
-    "variations": [
-      "Dominican Rosary",
-      "Franciscan Crown",
-      "Chaplet of Divine Mercy"
-    ]
+    "description": "Beads used to count prayers and meditate on the mysteries of Christ. Tradition links popularization to St. Dominic (13th c.), though it developed from earlier prayer practices. Forms: Dominican Rosary, Franciscan Crown, many chaplets."
   },
   {
-    "slug": "scapular",
-    "name": "Scapular",
+    "slug": "brown-scapular",
+    "name": "Brown Scapular",
     "category": "Devotional Articles",
-    "image": "scapular.png",
-    "description": "Derived from the monastic garment, small scapulars are worn as a sign of devotion and commitment to a spiritual family. The Brown Scapular of Our Lady of Mount Carmel became prominent in the 13th century and spread widely thereafter.",
-    "variations": [
-      "Brown Scapular",
-      "Blue Scapular",
-      "Black Scapular",
-      "Fivefold Scapular"
-    ]
+    "image": "scapular_brown.png",
+    "description": "A reduced form of the Carmelite habit worn as a sign of devotion to Our Lady of Mount Carmel. Widely adopted from the 13th century onward. Other scapulars exist with distinct promises and spirituality."
   },
   {
     "slug": "miraculous-medal",
     "name": "Miraculous Medal",
     "category": "Medals",
     "image": "miraculous_medal.png",
-    "description": "A medal revealed in apparitions to St. Catherine Labouré in Paris (1830), featuring symbols of Mary's intercession. It became a popular sign of trust in Mary's help and a reminder to pray.",
-    "variations": [
-      "Large & small designs",
-      "Localized inscriptions"
-    ]
+    "description": "Revealed to St. Catherine Labouré in 1830 (Paris), bearing symbols of Mary's intercession and Christ's redemption. Spread rapidly for its associated graces. Designs and inscriptions vary by language/region."
   },
   {
     "slug": "crucifix",
     "name": "Crucifix",
     "category": "Sacred Objects",
     "image": "crucifix.png",
-    "description": "A cross bearing the corpus of Jesus, a distinctive Christian sign recalling the Passion. Used in churches, homes, and personal devotion since early centuries; forms vary by art style.",
-    "variations": [
-      "San Damiano Cross",
-      "Byzantine-style",
-      "Wood/metal/stone forms"
-    ]
+    "description": "A cross with the corpus of Jesus, used since early Christianity as a reminder of the Passion. Found in churches, homes, and worn as pendants. Notable forms include the San Damiano cross and Byzantine styles."
   },
   {
     "slug": "benedict-medal",
     "name": "Saint Benedict Medal",
     "category": "Medals",
     "image": "benedict_medal.png",
-    "description": "Associated with the Benedictine tradition (popularly from the 17th c.), bearing initials of prayers against evil. Used with faith for protection and as a reminder to seek Christ through St. Benedict's intercession.",
-    "variations": [
-      "Jubilee Medal (1880)",
-      "Various sizes/materials"
-    ]
+    "description": "A devotional medal bearing initials of Latin prayers associated with St. Benedict. Promoted especially since the 17th c.; the Jubilee Medal (1880) standardized the design. Used with faith for protection."
   },
   {
     "slug": "holy-cards",
     "name": "Holy Cards",
     "category": "Devotional Articles",
     "image": "holy_cards.png",
-    "description": "Small printed images of Christ, the Blessed Virgin, or saints, often with prayers on the back. Popularized in the 19th–20th centuries with mass printing; used as keepsakes and aids to devotion.",
-    "variations": [
-      "Laminated or paper",
-      "Relic cards",
-      "Prayer variants by language"
-    ]
+    "description": "Small images of Christ, the Virgin Mary, or saints—often with prayers—popular since the 19th–20th c. with advances in printing. Used as keepsakes, catechetical aids, and memorials."
   },
   {
     "slug": "blessed-salt",
     "name": "Blessed Salt",
     "category": "Blessings",
     "image": "blessed_salt.png",
-    "description": "Salt blessed with specific prayers, traditionally used with holy water or sprinkled to ask God's protection and sanctification. Its use recalls biblical symbolism of preservation and covenant.",
-    "variations": [
-      "Used alone or mixed with holy water"
-    ]
+    "description": "Salt blessed with particular prayers, recalling biblical symbolism of preservation and covenant. Traditionally mixed with holy water or sprinkled for protection and sanctification."
   },
   {
     "slug": "incense",
     "name": "Incense",
     "category": "Liturgy",
     "image": "incense.png",
-    "description": "Fragrant resin burned in worship as a sign of prayer rising to God (cf. Psalm 141:2). Long used in the Church's liturgy and in private devotion; different blends exist.",
-    "variations": [
-      "Frankincense-dominant",
-      "Mixed resins",
-      "Floral blends"
-    ]
+    "description": "Resins burned as a sign of prayer rising to God (Ps 141:2). Used in East and West from antiquity. Blends vary by tradition; usage is governed by liturgical norms."
   },
   {
-    "slug": "candle",
+    "slug": "blessed-candle",
     "name": "Blessed Candle",
     "category": "Liturgy",
     "image": "candle.png",
-    "description": "Candles blessed (notably on the Feast of the Presentation—Candlemas) symbolize Christ the Light. Used in liturgy and home prayer, especially during blessings and processions.",
-    "variations": [
-      "Beeswax content",
-      "Votive vs. taper",
-      "Decorated candles"
-    ]
+    "description": "Candles blessed on feast days (notably Candlemas, Feb 2) symbolize Christ the Light. Used in processions, blessings, and home devotion. Beeswax content and decoration can differ."
+  },
+  {
+    "slug": "oil-of-the-sick",
+    "name": "Oil of the Sick (Oleum Infirmorum)",
+    "category": "Blessings",
+    "image": "oil_sick.png",
+    "description": "Olive or other plant oil sanctified by the bishop for the Sacrament of the Anointing of the Sick. As a sacred matter used in a Sacrament, it is distinct yet historically connected to blessed oils used devotionally."
+  },
+  {
+    "slug": "saint-medals",
+    "name": "Saint Medals (various)",
+    "category": "Medals",
+    "image": "medal_saint.png",
+    "description": "Medals depicting particular saints (e.g., St. Michael, St. Joseph) worn as reminders of their intercession. Designs differ by culture; inscriptions often localize prayers or titles."
   }
 ]

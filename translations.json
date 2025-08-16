@@ -9,7 +9,7 @@
       "add_fav": "Add to Favorites",
       "remove_fav": "Remove Favorite",
       "featured_today": "Featured Today",
-      "language": "Language"
+      "language": "Language (auto-detected)"
     },
     "fr": {
       "title": "Encyclopédie des sacramentaux catholiques",
@@ -20,7 +20,7 @@
       "add_fav": "Ajouter aux favoris",
       "remove_fav": "Retirer des favoris",
       "featured_today": "À l’honneur aujourd’hui",
-      "language": "Langue"
+      "language": "Langue (détectée automatiquement)"
     },
     "es": {
       "title": "Enciclopedia de sacramentales católicos",
@@ -31,7 +31,7 @@
       "add_fav": "Agregar a Favoritos",
       "remove_fav": "Quitar de Favoritos",
       "featured_today": "Destacado de hoy",
-      "language": "Idioma"
+      "language": "Idioma (detectado automáticamente)"
     }
   },
   "items": {
@@ -51,12 +51,12 @@
         "name": "Rosario"
       }
     },
-    "scapular": {
+    "brown-scapular": {
       "fr": {
-        "name": "Scapulaire"
+        "name": "Scapulaire brun"
       },
       "es": {
-        "name": "Escapulario"
+        "name": "Escapulario café"
       }
     },
     "miraculous-medal": {
@@ -107,12 +107,28 @@
         "name": "Incienso"
       }
     },
-    "candle": {
+    "blessed-candle": {
       "fr": {
         "name": "Bougie bénie"
       },
       "es": {
         "name": "Vela bendita"
+      }
+    },
+    "oil-of-the-sick": {
+      "fr": {
+        "name": "Huile des malades"
+      },
+      "es": {
+        "name": "Óleo de los enfermos"
+      }
+    },
+    "saint-medals": {
+      "fr": {
+        "name": "Médailles de saints"
+      },
+      "es": {
+        "name": "Medallas de santos"
       }
     }
   }

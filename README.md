@@ -1,21 +1,24 @@
-# Catholic Sacramentals Encyclopedia — Phase 5
+# Catholic Sacramentals — Phase 5.1
 
-Streamlit app with search + category filter (combined), favorites, daily featured item, basic multilingual (EN/FR/ES), and small valid PNG assets.
+**What's new**
+- Auto-language detection (via browser) with fallback to English; still user-selectable.
+- 12 sacramentals with extended descriptions and categories.
+- Combined search + category filter.
+- Favorites and a daily featured item.
+- Valid small PNG images to avoid PIL errors.
 
-## Run locally
+## Run
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## Query Param Override
+Append `?lang=fr` or `?lang=es` to the app URL to force a language.
+
 ## Files
 - `app.py` — Streamlit app
-- `sacramentals.json` — core content
-- `translations.json` — UI + item name translations (EN/FR/ES)
-- `assets/` — valid PNG images + `placeholder.png`
-- `requirements.txt` — dependencies
-
-## Notes
-- Favorites persist for the current session (Streamlit session_state).
-- Search matches both name and description.
-- Featured item is deterministic per day, not truly random.
+- `sacramentals.json` — data (12 items)
+- `translations.json` — UI + name translations (EN/FR/ES)
+- `assets/` — safe PNGs
+- `requirements.txt`
