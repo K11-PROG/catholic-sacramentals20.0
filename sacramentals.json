@@ -1,32 +1,118 @@
 [
   {
+    "slug": "holy-water",
     "name": "Holy Water",
     "category": "Blessings",
     "image": "holy_water.png",
-    "description": "Holy Water is water that has been blessed by a priest. It is a sacramental used for protection against evil, for making the Sign of the Cross, and blessing people, homes, and objects. Historical use traces back to early Christianity around the 2nd century. Variations include Easter Water, used in special liturgical contexts."
+    "description": "Water blessed by a priest or deacon, used for making the Sign of the Cross, blessing persons, homes, and objects, and recalling Baptism. Ancient use in Christianity is attested by the 2nd–3rd centuries. Variations include Easter Water (blessed in the Easter Vigil) and water used with blessed salt.",
+    "variations": [
+      "Easter Water",
+      "Blessed Water with Salt"
+    ]
   },
   {
+    "slug": "rosary",
     "name": "Rosary",
     "category": "Devotional Articles",
     "image": "rosary.png",
-    "description": "The Rosary is a string of beads used to keep count of prayers, especially the Hail Mary. Popularized by St. Dominic in the 13th century, it became one of the most widespread Catholic devotions. Variations include the Dominican Rosary, the Franciscan Crown, and modern Chaplets."
+    "description": "A string of beads used to count prayers while meditating on the mysteries of Christ. Traditionally associated with St. Dominic (13th c.), the Rosary developed from earlier psalter-like devotions. Widely promoted since the 16th century.",
+    "variations": [
+      "Dominican Rosary",
+      "Franciscan Crown",
+      "Chaplet of Divine Mercy"
+    ]
   },
   {
+    "slug": "scapular",
     "name": "Scapular",
     "category": "Devotional Articles",
     "image": "scapular.png",
-    "description": "The Scapular is a garment originally part of the monastic habit, later adapted into smaller devotional scapulars for laypeople. The Brown Scapular of Our Lady of Mount Carmel, approved in the 13th century, is the most popular. Variations include the Blue Scapular, Black Scapular, and more."
+    "description": "Derived from the monastic garment, small scapulars are worn as a sign of devotion and commitment to a spiritual family. The Brown Scapular of Our Lady of Mount Carmel became prominent in the 13th century and spread widely thereafter.",
+    "variations": [
+      "Brown Scapular",
+      "Blue Scapular",
+      "Black Scapular",
+      "Fivefold Scapular"
+    ]
   },
   {
+    "slug": "miraculous-medal",
     "name": "Miraculous Medal",
     "category": "Medals",
-    "image": "medal.png",
-    "description": "The Miraculous Medal was revealed to St. Catherine Labouré in Paris in 1830. It depicts the Blessed Virgin Mary and carries promises of grace and protection. Variations include other devotional medals such as the St. Benedict Medal."
+    "image": "miraculous_medal.png",
+    "description": "A medal revealed in apparitions to St. Catherine Labouré in Paris (1830), featuring symbols of Mary's intercession. It became a popular sign of trust in Mary's help and a reminder to pray.",
+    "variations": [
+      "Large & small designs",
+      "Localized inscriptions"
+    ]
   },
   {
+    "slug": "crucifix",
     "name": "Crucifix",
     "category": "Sacred Objects",
     "image": "crucifix.png",
-    "description": "A Crucifix is a cross with the figure of Jesus crucified upon it. It has been used since early Christianity as a reminder of Christ’s sacrifice. It is common in churches, homes, and worn as a pendant. Variations include the San Damiano Cross and regional artistic forms."
+    "description": "A cross bearing the corpus of Jesus, a distinctive Christian sign recalling the Passion. Used in churches, homes, and personal devotion since early centuries; forms vary by art style.",
+    "variations": [
+      "San Damiano Cross",
+      "Byzantine-style",
+      "Wood/metal/stone forms"
+    ]
+  },
+  {
+    "slug": "benedict-medal",
+    "name": "Saint Benedict Medal",
+    "category": "Medals",
+    "image": "benedict_medal.png",
+    "description": "Associated with the Benedictine tradition (popularly from the 17th c.), bearing initials of prayers against evil. Used with faith for protection and as a reminder to seek Christ through St. Benedict's intercession.",
+    "variations": [
+      "Jubilee Medal (1880)",
+      "Various sizes/materials"
+    ]
+  },
+  {
+    "slug": "holy-cards",
+    "name": "Holy Cards",
+    "category": "Devotional Articles",
+    "image": "holy_cards.png",
+    "description": "Small printed images of Christ, the Blessed Virgin, or saints, often with prayers on the back. Popularized in the 19th–20th centuries with mass printing; used as keepsakes and aids to devotion.",
+    "variations": [
+      "Laminated or paper",
+      "Relic cards",
+      "Prayer variants by language"
+    ]
+  },
+  {
+    "slug": "blessed-salt",
+    "name": "Blessed Salt",
+    "category": "Blessings",
+    "image": "blessed_salt.png",
+    "description": "Salt blessed with specific prayers, traditionally used with holy water or sprinkled to ask God's protection and sanctification. Its use recalls biblical symbolism of preservation and covenant.",
+    "variations": [
+      "Used alone or mixed with holy water"
+    ]
+  },
+  {
+    "slug": "incense",
+    "name": "Incense",
+    "category": "Liturgy",
+    "image": "incense.png",
+    "description": "Fragrant resin burned in worship as a sign of prayer rising to God (cf. Psalm 141:2). Long used in the Church's liturgy and in private devotion; different blends exist.",
+    "variations": [
+      "Frankincense-dominant",
+      "Mixed resins",
+      "Floral blends"
+    ]
+  },
+  {
+    "slug": "candle",
+    "name": "Blessed Candle",
+    "category": "Liturgy",
+    "image": "candle.png",
+    "description": "Candles blessed (notably on the Feast of the Presentation—Candlemas) symbolize Christ the Light. Used in liturgy and home prayer, especially during blessings and processions.",
+    "variations": [
+      "Beeswax content",
+      "Votive vs. taper",
+      "Decorated candles"
+    ]
   }
 ]

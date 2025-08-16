@@ -1,0 +1,119 @@
+{
+  "ui": {
+    "en": {
+      "title": "Catholic Sacramentals Encyclopedia",
+      "search": "Search",
+      "category": "Category",
+      "all": "All",
+      "favorites": "Favorites",
+      "add_fav": "Add to Favorites",
+      "remove_fav": "Remove Favorite",
+      "featured_today": "Featured Today",
+      "language": "Language"
+    },
+    "fr": {
+      "title": "Encyclopédie des sacramentaux catholiques",
+      "search": "Rechercher",
+      "category": "Catégorie",
+      "all": "Toutes",
+      "favorites": "Favoris",
+      "add_fav": "Ajouter aux favoris",
+      "remove_fav": "Retirer des favoris",
+      "featured_today": "À l’honneur aujourd’hui",
+      "language": "Langue"
+    },
+    "es": {
+      "title": "Enciclopedia de sacramentales católicos",
+      "search": "Buscar",
+      "category": "Categoría",
+      "all": "Todas",
+      "favorites": "Favoritos",
+      "add_fav": "Agregar a Favoritos",
+      "remove_fav": "Quitar de Favoritos",
+      "featured_today": "Destacado de hoy",
+      "language": "Idioma"
+    }
+  },
+  "items": {
+    "holy-water": {
+      "fr": {
+        "name": "Eau bénite"
+      },
+      "es": {
+        "name": "Agua bendita"
+      }
+    },
+    "rosary": {
+      "fr": {
+        "name": "Chapelet"
+      },
+      "es": {
+        "name": "Rosario"
+      }
+    },
+    "scapular": {
+      "fr": {
+        "name": "Scapulaire"
+      },
+      "es": {
+        "name": "Escapulario"
+      }
+    },
+    "miraculous-medal": {
+      "fr": {
+        "name": "Médaille miraculeuse"
+      },
+      "es": {
+        "name": "Medalla Milagrosa"
+      }
+    },
+    "crucifix": {
+      "fr": {
+        "name": "Crucifix"
+      },
+      "es": {
+        "name": "Crucifijo"
+      }
+    },
+    "benedict-medal": {
+      "fr": {
+        "name": "Médaille de Saint Benoît"
+      },
+      "es": {
+        "name": "Medalla de San Benito"
+      }
+    },
+    "holy-cards": {
+      "fr": {
+        "name": "Images pieuses"
+      },
+      "es": {
+        "name": "Estampas sagradas"
+      }
+    },
+    "blessed-salt": {
+      "fr": {
+        "name": "Sel béni"
+      },
+      "es": {
+        "name": "Sal bendita"
+      }
+    },
+    "incense": {
+      "fr": {
+        "name": "Encens"
+      },
+      "es": {
+        "name": "Incienso"
+      }
+    },
+    "candle": {
+      "fr": {
+        "name": "Bougie bénie"
+      },
+      "es": {
+        "name": "Vela bendita"
+      }
+    }
+  }
+}
