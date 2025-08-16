@@ -1,0 +1,11 @@
+[
+  {"name": "Holy Water", "category": "Blessing", "description": "Water blessed for protection and devotion.", "image": "holy_water.png"},
+  {"name": "Rosary", "category": "Prayer", "description": "Beads used for meditative prayer.", "image": "rosary.png"},
+  {"name": "Scapular", "category": "Devotion", "description": "Cloth sacramental worn as a sign of devotion.", "image": "scapular.png"},
+  {"name": "Medal", "category": "Devotion", "description": "Religious medals worn for faith and protection.", "image": "medal.png"},
+  {"name": "Crucifix", "category": "Symbol", "description": "Cross with the body of Christ, central Christian symbol.", "image": "crucifix.png"},
+  {"name": "Candle", "category": "Liturgy", "description": "Candles blessed and used in prayer and liturgy.", "image": "candle.png"},
+  {"name": "Incense", "category": "Liturgy", "description": "Fragrant offering burned in liturgical ceremonies.", "image": "incense.png"},
+  {"name": "Oil", "category": "Anointing", "description": "Blessed oil used in anointing and sacraments.", "image": "oil.png"},
+  {"name": "Palm", "category": "Blessing", "description": "Palm branches blessed on Palm Sunday.", "image": "palm.png"}
+]

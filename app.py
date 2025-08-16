@@ -2,32 +2,38 @@ import streamlit as st
 import json
 import os
 
-DATA_PATH = os.path.join("data", "sacramentals.json")
+ASSETS_DIR = "assets"
 
+def safe_image(img_path, caption=""):
+    if os.path.exists(img_path):
+        try:
+            st.image(img_path, use_container_width=True, caption=caption)
+        except Exception:
+            st.warning(f"⚠️ Could not load image: {img_path}")
+            st.image(os.path.join(ASSETS_DIR, "placeholder.png"), use_container_width=True, caption=caption)
+    else:
+        st.warning(f"⚠️ Missing image: {img_path}")
+        st.image(os.path.join(ASSETS_DIR, "placeholder.png"), use_container_width=True, caption=caption)
+
+@st.cache_data
 def load_data():
-    with open(DATA_PATH, "r", encoding="utf-8") as f:
+    with open("data.json", "r", encoding="utf-8") as f:
         return json.load(f)
 
 def main():
-    st.set_page_config(page_title="Catholic Sacramentals Encyclopedia", layout="wide")
-    st.title("✝️ Catholic Sacramentals Encyclopedia")
-
-    st.sidebar.header("Filter Sacramentals")
-    category = st.sidebar.selectbox("Select Category", ["All", "Blessed Objects", "Devotional Items", "Prayers"])
-
+    st.title("📖 Catholic Sacramentals Encyclopedia")
     items = load_data()
 
-    if category != "All":
-        items = [item for item in items if item["category"] == category]
+    categories = ["All"] + sorted(set(item["category"] for item in items))
+    choice = st.sidebar.selectbox("Filter by Category", categories)
+
+    if choice != "All":
+        items = [item for item in items if item["category"] == choice]
 
     for item in items:
         st.subheader(item["name"])
-        img_path = os.path.join("assets", item["image"])
-        if os.path.exists(img_path):
-            st.image(img_path, use_container_width=True)
-        st.markdown(item["description"])
-        st.markdown(f"**Category:** {item['category']}")
-        st.markdown("---")
+        safe_image(os.path.join(ASSETS_DIR, item["image"]), caption=item["name"])
+        st.write(item["description"])
 
 if __name__ == "__main__":
     main()
