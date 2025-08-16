@@ -9,22 +9,25 @@ def load_data():
         return json.load(f)
 
 def main():
-    st.set_page_config(page_title="Catholic Sacramentals", layout="wide")
-    st.title("Catholic Sacramentals")
+    st.set_page_config(page_title="Catholic Sacramentals Encyclopedia", layout="wide")
+    st.title("✝️ Catholic Sacramentals Encyclopedia")
 
-    # Search
-    search_query = st.text_input("Search sacramentals")
+    st.sidebar.header("Filter Sacramentals")
+    category = st.sidebar.selectbox("Select Category", ["All", "Blessed Objects", "Devotional Items", "Prayers"])
 
-    data = load_data()
-    for item in data:
-        if search_query.lower() in item["name"].lower() or search_query == "":
-            st.subheader(item["name"])
-            img_path = os.path.join("assets", "images", item["image"])
-            if os.path.exists(img_path):
-                st.image(img_path, use_container_width=True)
-            else:
-                st.write("[Image missing]")
-            st.write(item["description"])
+    items = load_data()
+
+    if category != "All":
+        items = [item for item in items if item["category"] == category]
+
+    for item in items:
+        st.subheader(item["name"])
+        img_path = os.path.join("assets", item["image"])
+        if os.path.exists(img_path):
+            st.image(img_path, use_container_width=True)
+        st.markdown(item["description"])
+        st.markdown(f"**Category:** {item['category']}")
+        st.markdown("---")
 
 if __name__ == "__main__":
     main()
