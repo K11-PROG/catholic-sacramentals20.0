@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Holy Water",
+    "category": "Blessings",
+    "image": "holy_water.png",
+    "description": "Holy Water is water that has been blessed by a priest. It is a sacramental used for protection against evil, for making the Sign of the Cross, and blessing people, homes, and objects. Historical use traces back to early Christianity around the 2nd century. Variations include Easter Water, used in special liturgical contexts."
+  },
+  {
+    "name": "Rosary",
+    "category": "Devotional Articles",
+    "image": "rosary.png",
+    "description": "The Rosary is a string of beads used to keep count of prayers, especially the Hail Mary. Popularized by St. Dominic in the 13th century, it became one of the most widespread Catholic devotions. Variations include the Dominican Rosary, the Franciscan Crown, and modern Chaplets."
+  },
+  {
+    "name": "Scapular",
+    "category": "Devotional Articles",
+    "image": "scapular.png",
+    "description": "The Scapular is a garment originally part of the monastic habit, later adapted into smaller devotional scapulars for laypeople. The Brown Scapular of Our Lady of Mount Carmel, approved in the 13th century, is the most popular. Variations include the Blue Scapular, Black Scapular, and more."
+  },
+  {
+    "name": "Miraculous Medal",
+    "category": "Medals",
+    "image": "medal.png",
+    "description": "The Miraculous Medal was revealed to St. Catherine Labouré in Paris in 1830. It depicts the Blessed Virgin Mary and carries promises of grace and protection. Variations include other devotional medals such as the St. Benedict Medal."
+  },
+  {
+    "name": "Crucifix",
+    "category": "Sacred Objects",
+    "image": "crucifix.png",
+    "description": "A Crucifix is a cross with the figure of Jesus crucified upon it. It has been used since early Christianity as a reminder of Christ’s sacrifice. It is common in churches, homes, and worn as a pendant. Variations include the San Damiano Cross and regional artistic forms."
+  }
+]

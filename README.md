@@ -1,21 +1,18 @@
 # Catholic Sacramentals Encyclopedia
 
-A simple Streamlit app showcasing Catholic sacramentals with descriptions and images.
+A Streamlit-based encyclopedia of Catholic sacramentals.
 
-## 📂 Folder Structure
-- `app.py` → main Streamlit app
-- `data/sacramentals.json` → sample data file
-- `assets/` → stock images
-- `requirements.txt` → dependencies
-- `README.md` → project info
+## Features
+- Browse sacramentals with descriptions and history
+- Filter by category
+- Small stock images included for each sacramental
+- Ready for deployment on Streamlit Cloud
 
-## 🚀 Run Locally
+## How to Run
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## 🌐 Deploy on Streamlit Cloud
-1. Push repo to GitHub
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
-3. Deploy directly from GitHub
+## Deployment
+Push this repo to GitHub and connect it with [Streamlit Cloud](https://streamlit.io/cloud).
