@@ -1,13 +1,16 @@
-# Catholic Sacramentals Encyclopedia (Phase 5.2 Fixed)
+# Catholic Sacramentals – Phase 5.3 (Light)
 
-## Features
-- Streamlit app with sidebar filters
-- 12 core sacramentals included with descriptions
-- Fallback image handling (no more crashes if image missing/corrupt)
-- Ready to deploy on Streamlit Cloud or locally
+- 12 core sacramentals with structured mini-encyclopedia fields
+- Card layout in Streamlit
+- Safe image handling with `assets/fallback.jpg`
+- Compact, valid JPGs
 
 ## Run locally
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## Deploy on Streamlit Cloud
+- Push folder to GitHub
+- Set entrypoint to `app.py`

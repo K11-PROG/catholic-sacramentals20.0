@@ -1,74 +1,98 @@
 [
   {
     "name": "Holy Water",
-    "category": "Blessings",
     "image": "holy_water.jpg",
-    "description": "Holy water is blessed by a priest and used for protection, blessings, and reminders of baptism."
+    "origin": "Rooted in Jewish purification rites; adopted by early Church.",
+    "use": "Blessings, protection, recall baptism; holy water fonts.",
+    "variations": "Often mixed with blessed salt; Eastern Theophany water.",
+    "dates": "Early refs 2nd–3rd c.; Roman Ritual 1614."
   },
   {
     "name": "Rosary",
-    "category": "Devotionals",
     "image": "rosary.jpg",
-    "description": "The Rosary is a devotional prayer using beads to meditate on the mysteries of Christ."
+    "origin": "Evolved 12th–15th c. from monastic psalter.",
+    "use": "Meditation on mysteries using beads.",
+    "variations": "15/20-decade, Servite, Brigittine, Scriptural.",
+    "dates": "Pius V (1569); Luminous Mysteries (2002)."
   },
   {
-    "name": "Scapular",
-    "category": "Devotionals",
-    "image": "scapular.jpg",
-    "description": "The Brown Scapular of Our Lady of Mount Carmel is a sign of devotion and protection."
+    "name": "Brown Scapular",
+    "image": "brown_scapular.jpg",
+    "origin": "Carmelite devotion; sign of discipleship.",
+    "use": "Two wool pieces over shoulders; Marian devotion.",
+    "variations": "Green, Red, Black, Blue scapulars.",
+    "dates": "Popular late Middle Ages; rites by 17th c."
   },
   {
     "name": "Crucifix",
-    "category": "Symbols",
     "image": "crucifix.jpg",
-    "description": "The crucifix is a cross with the body of Christ, a reminder of His sacrifice."
+    "origin": "Symbol of Passion; widespread by late antiquity.",
+    "use": "Displayed, worn, liturgical focus of prayer.",
+    "variations": "Byzantine, Latin, San Damiano; indulgenced.",
+    "dates": "Use 6th–8th c.; Trent affirms images (1563)."
   },
   {
-    "name": "Medal of St. Benedict",
-    "category": "Medals",
+    "name": "St Benedict Medal",
     "image": "st_benedict_medal.jpg",
-    "description": "The Medal of St. Benedict is used for protection against evil and temptation."
+    "origin": "Monastic devotion to St. Benedict.",
+    "use": "Worn/placed; protection; special blessing.",
+    "variations": "Jubilee Medal (1880) with exorcistic letters.",
+    "dates": "Spread 17th–19th c.; 1880 design."
   },
   {
-    "name": "Palm Branches",
-    "category": "Seasonal",
-    "image": "palms.jpg",
-    "description": "Blessed palms from Palm Sunday symbolize Christ's triumphal entry into Jerusalem."
+    "name": "Miraculous Medal",
+    "image": "miraculous_medal.jpg",
+    "origin": "1830 apparitions to St. Catherine Labouré.",
+    "use": "Worn as Marian sign; many reported graces.",
+    "variations": "Various sizes/languages; paired with others.",
+    "dates": "First struck 1832; rapid spread 19th c."
   },
   {
-    "name": "Ashes",
-    "category": "Seasonal",
-    "image": "ashes.jpg",
-    "description": "Ashes, imposed on Ash Wednesday, remind the faithful of mortality and repentance."
-  },
-  {
-    "name": "Candle",
-    "category": "Symbols",
+    "name": "Blessed Candles",
     "image": "candle.jpg",
-    "description": "Blessed candles represent Christ as the light of the world."
-  },
-  {
-    "name": "Holy Oils",
-    "category": "Blessings",
-    "image": "holy_oils.jpg",
-    "description": "Sacred oils used in sacraments such as Baptism, Confirmation, and Anointing of the Sick."
-  },
-  {
-    "name": "Agua Bendita Bottle",
-    "category": "Blessings",
-    "image": "water_bottle.jpg",
-    "description": "A small bottle for carrying holy water, often kept at home."
-  },
-  {
-    "name": "Rosary Ring",
-    "category": "Devotionals",
-    "image": "rosary_ring.jpg",
-    "description": "A small ring with ten bumps and a cross for discreet rosary prayers."
+    "origin": "Christ the Light; Candlemas tradition.",
+    "use": "Processions, blessings, storms/illness prayer.",
+    "variations": "Beeswax custom; triple candles historically.",
+    "dates": "Candlemas 4th–5th c.; rites 10th–12th c."
   },
   {
     "name": "Incense",
-    "category": "Symbols",
     "image": "incense.jpg",
-    "description": "Incense symbolizes prayers rising to heaven and is used in liturgical celebrations."
+    "origin": "Biblical roots; early Christian adoption.",
+    "use": "Mass, Benediction, funerals; purification symbol.",
+    "variations": "Frankincense blends; Eastern/Western thuribles.",
+    "dates": "Regular liturgical use by early medieval era."
+  },
+  {
+    "name": "Blessed Salt",
+    "image": "salt.jpg",
+    "origin": "Elisha’s salt (2 Kgs 2); early baptismal use.",
+    "use": "Home blessings; added to holy water.",
+    "variations": "Exorcised salt in traditional rites.",
+    "dates": "Roman sacramentaries; Roman Ritual 1614."
+  },
+  {
+    "name": "Ashes (Ash Wednesday)",
+    "image": "ashes.jpg",
+    "origin": "Ancient penance sign to begin Lent.",
+    "use": "Cross on forehead; repentance & mortality.",
+    "variations": "Sprinkling on head vs. cross on forehead.",
+    "dates": "Common from 11th c.; formulas standardized."
+  },
+  {
+    "name": "Palm Branches",
+    "image": "palm.jpg",
+    "origin": "Triumphal symbol; Christian Palm Sunday.",
+    "use": "Kept at home as sign of Christ’s victory.",
+    "variations": "Palm crosses; olive/box branches where needed.",
+    "dates": "Processions 4th c. Jerusalem; medieval West."
+  },
+  {
+    "name": "Holy Cards",
+    "image": "holy_card.jpg",
+    "origin": "Early modern devotional prints.",
+    "use": "Images with prayers; keepsakes of rites.",
+    "variations": "Lace-edge (19th c.), relic, indulgenced cards.",
+    "dates": "Mass-printed 18th–19th c.; widespread 1800s."
   }
 ]
