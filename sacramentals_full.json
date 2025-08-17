@@ -1,0 +1,232 @@
+[
+  {
+    "slug": "holy-water",
+    "name": "Holy Water",
+    "category": "Blessings",
+    "image": "holy_water.jpg",
+    "origin": "Ritual purification derived from Jewish practices; early Christians adopted it as sign of cleansing and blessing.",
+    "use": "Blessings, recalling Baptism, sprinkled in homes and churches, exorcistic uses in some traditions.",
+    "variations": "Easter Water, water with blessed salt, Theophany water in East.",
+    "dates": "Attested c.2nd–3rd century; Roman Ritual formalized rites (1614)."
+  },
+  {
+    "slug": "rosary",
+    "name": "Rosary",
+    "category": "Devotionals",
+    "image": "rosary.jpg",
+    "origin": "Evolved from monastic recitation of Psalms and Hail Marys; tradition attributes spread to St. Dominic.",
+    "use": "Meditative prayer on the mysteries of Christ using decades of Hail Marys, Our Fathers, and Glories.",
+    "variations": "Dominican rosary, Franciscan Crown, Chaplet of Divine Mercy, Scriptural rosary.",
+    "dates": "Standardized by Pope Pius V (1569); Luminous Mysteries added 2002."
+  },
+  {
+    "slug": "brown-scapular",
+    "name": "Brown Scapular",
+    "category": "Devotionals",
+    "image": "brown_scapular.jpg",
+    "origin": "Carmelite devotion symbolizing Marian protection and consecration.",
+    "use": "Worn as sign of Marian devotion and reminder of Christian life; enrollment rites exist.",
+    "variations": "Blue, Green, Fivefold scapulars for specific devotions.",
+    "dates": "Prominent from 13th century; devotional enrollment developed in later centuries."
+  },
+  {
+    "slug": "crucifix",
+    "name": "Crucifix",
+    "category": "Objects",
+    "image": "crucifix.jpg",
+    "origin": "Visual representation of Christ’s passion, appearing in Christian art by late antiquity.",
+    "use": "Veneration, focal point in prayer, liturgical processions, worn as pendant.",
+    "variations": "Eastern icon cross, San Damiano, stylized modern forms.",
+    "dates": "Use established by 6th–8th century; Councils affirmed images in worship."
+  },
+  {
+    "slug": "miraculous-medal",
+    "name": "Miraculous Medal",
+    "category": "Medals",
+    "image": "miraculous_medal.jpg",
+    "origin": "Revealed to St. Catherine Labouré (1830) in Paris; popular Marian sacramental.",
+    "use": "Worn as devotion to Mary and a sign of her protection; associated with reported graces.",
+    "variations": "Various sizes, localized inscriptions.",
+    "dates": "First medals c.1832."
+  },
+  {
+    "slug": "st-benedict-medal",
+    "name": "St. Benedict Medal",
+    "category": "Medals",
+    "image": "st_benedict_medal.jpg",
+    "origin": "Linked to Benedictine spirituality; inscriptions invoked for protection from evil.",
+    "use": "Worn, placed in homes, or affixed to objects as a sacramental.",
+    "variations": "Different historical designs; Jubilee Medal standardized (1880).",
+    "dates": "Prominent usage 17th–19th centuries."
+  },
+  {
+    "slug": "holy-cards",
+    "name": "Holy Cards",
+    "category": "Devotionals",
+    "image": "holy_card.jpg",
+    "origin": "Printed devotional images from early modern Europe, popularized with lithography.",
+    "use": "Keepsakes for sacraments, distribution after Mass, aids to devotion.",
+    "variations": "Lace-edge cards, prayer cards with relics, laminated holy cards.",
+    "dates": "Widespread by 19th century."
+  },
+  {
+    "slug": "palm-branches",
+    "name": "Palm Branches",
+    "category": "Seasonal",
+    "image": "palm.jpg",
+    "origin": "Triumphal symbol from antiquity adopted into Palm Sunday traditions.",
+    "use": "Blessed during Palm Sunday processions; kept in homes as a sacramental.",
+    "variations": "Olive, box, or other branches where palms scarce; woven crosses.",
+    "dates": "Processions attested in Jerusalem by 4th century."
+  },
+  {
+    "slug": "ashes",
+    "name": "Ashes (Ash Wednesday)",
+    "category": "Seasonal",
+    "image": "ashes.jpg",
+    "origin": "Ancient penitential sign; adopted as the start of Lenten observance.",
+    "use": "Imposed on forehead with words of repentance to mark the beginning of Lent.",
+    "variations": "Sprinkling on head (European custom) vs. cross on forehead.",
+    "dates": "General practice from 11th c.; liturgical formulas standardized in the Roman Missal."
+  },
+  {
+    "slug": "candle",
+    "name": "Blessed Candle",
+    "category": "Objects",
+    "image": "candle.jpg",
+    "origin": "Symbol of Christ the Light; Candlemas traditions bless candles annually.",
+    "use": "Liturgical processions, home blessings, votive devotion.",
+    "variations": "Votive, paschal, beeswax-rich candles with differing customs.",
+    "dates": "Candlemas celebrated since early medieval centuries."
+  },
+  {
+    "slug": "incense",
+    "name": "Incense",
+    "category": "Liturgy",
+    "image": "incense.jpg",
+    "origin": "Biblical precedents (Ps 141) and temple worship influenced Christian liturgical use.",
+    "use": "Used at Mass, processions, funerals as symbol of prayer, sanctification.",
+    "variations": "Frankincense vs blended resin mixtures; different thurible use east/west.",
+    "dates": "Widespread medieval liturgical practice."
+  },
+  {
+    "slug": "holy-oils",
+    "name": "Holy Oils",
+    "category": "Blessings",
+    "image": "holy_oils.jpg",
+    "origin": "Oils consecrated at Chrism Mass for sacraments (Baptism, Confirmation, Anointing).",
+    "use": "Sacramental matter used by bishops and priests in sacraments and blessings.",
+    "variations": "Oleum infirmorum (Oil of the Sick), Oleum catechumenorum, Chrism.",
+    "dates": "Ancient sacramental tradition formalized in rites over centuries."
+  },
+  {
+    "slug": "agnus-dei",
+    "name": "Agnus Dei (wax)",
+    "category": "Devotionals",
+    "image": "agnus_dei.jpg",
+    "origin": "Wax disks impressed with the Lamb of God, blessed for devotion in medieval times.",
+    "use": "Kept as sacramentals for protection and blessing.",
+    "variations": "Different stamps and sizes; regional customs.",
+    "dates": "Medieval devotional practice."
+  },
+  {
+    "slug": "salt",
+    "name": "Blessed Salt",
+    "category": "Blessings",
+    "image": "salt.jpg",
+    "origin": "Biblical symbolism and early Christian rites used salt in blessings.",
+    "use": "Added to holy water or used in blessings of homes and objects.",
+    "variations": "Different blessing formulas; exorcistic salt in traditional rites.",
+    "dates": "Roman sacramentaries include salt blessings; codified rituals by 17th c."
+  },
+  {
+    "slug": "rosary-ring",
+    "name": "Rosary Ring",
+    "category": "Devotionals",
+    "image": "rosary_ring.jpg",
+    "origin": "Compact rosary form for travelers and discreet prayer.",
+    "use": "Ten bumps and a cross allow compact recitation of decades.",
+    "variations": "Different designs and materials.",
+    "dates": "Popularized in 20th century."
+  },
+  {
+    "slug": "st-joseph-medal",
+    "name": "St. Joseph Medal",
+    "category": "Medals",
+    "image": "st_joseph.jpg",
+    "origin": "Devotional medals invoking St. Joseph’s intercession, grew in 19th-20th c.",
+    "use": "Worn or carried as sign of patronage and protection.",
+    "variations": "Local inscriptions and images.",
+    "dates": "19th-century devotion expansion."
+  },
+  {
+    "slug": "st-michael-medal",
+    "name": "St. Michael Medal",
+    "category": "Medals",
+    "image": "st_michael.jpg",
+    "origin": "Associated with prayers for protection; popular in modern devotional practice.",
+    "use": "Worn for spiritual protection and as a reminder of angelic aid.",
+    "variations": "Different artistic depictions.",
+    "dates": "Popularized 19th-20th centuries."
+  },
+  {
+    "slug": "guadalupe-medal",
+    "name": "Our Lady of Guadalupe Medal",
+    "category": "Medals",
+    "image": "guadalupe.jpg",
+    "origin": "Linked to apparitions in 1531; strong Marian devotion in the Americas.",
+    "use": "Worn as sign of Marian devotion and cultural identity.",
+    "variations": "Different devotional images and inscriptions.",
+    "dates": "Devotion spread after 16th century; strong cultural ties to Mexico."
+  },
+  {
+    "slug": "st-christopher-medal",
+    "name": "St. Christopher Medal",
+    "category": "Medals",
+    "image": "st_christopher.jpg",
+    "origin": "Traditionally invoked for safe travel; popular medal for motorists and travelers.",
+    "use": "Worn for protection during travel.",
+    "variations": "Modern and antique designs.",
+    "dates": "Popular devotion especially in the 20th century."
+  },
+  {
+    "slug": "stations-of-the-cross",
+    "name": "Stations of the Cross booklet",
+    "category": "Devotionals",
+    "image": "stations.jpg",
+    "origin": "Way of the Cross as a devotional practice developed in medieval pilgrimage traditions.",
+    "use": "Meditation on the Passion via 14 stations, especially during Lent.",
+    "variations": "Different station counts/arrangements; elaborate and pocket booklets.",
+    "dates": "Medieval roots; widespread popularization 17th-19th centuries."
+  },
+  {
+    "slug": "holy-card",
+    "name": "Holy Card (expanded)",
+    "category": "Devotionals",
+    "image": "holy_card.jpg",
+    "origin": "Printed devotional images, used as keepsakes and catechetical tools.",
+    "use": "Given at sacraments, funerals, pilgrimages; sometimes blessed with prayers or relics.",
+    "variations": "Sizes, laminations, relic inclusion.",
+    "dates": "Mass printing from 18th–19th centuries."
+  },
+  {
+    "slug": "exorcism-crucifix",
+    "name": "Exorcism Crucifix",
+    "category": "Objects",
+    "image": "exorcism_crucifix.jpg",
+    "origin": "Specific crucifixes used by priests in rites of exorcism, often combined with Benedictine medals.",
+    "use": "Liturgical and pastoral use during rites of deliverance.",
+    "variations": "Often paired with relics or special inscriptions.",
+    "dates": "Liturgical rites clarified in modern exorcism rituals."
+  },
+  {
+    "slug": "processional-cross",
+    "name": "Processional Cross",
+    "category": "Objects",
+    "image": "processional_cross.jpg",
+    "origin": "Cross carried at the head of processions to signify Christ's leadership.",
+    "use": "Used in liturgical processions and ceremonies.",
+    "variations": "Designs range from simple to ornate.",
+    "dates": "Ancient liturgical practice."
+  }
+]
