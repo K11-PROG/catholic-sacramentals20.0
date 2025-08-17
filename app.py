@@ -1,62 +1,36 @@
 import streamlit as st
-import json, os
+import os
+import json
 
-DATA_PATH = os.path.join("data", "sacramentals.json")
-FAV_PATH = "favorites.json"
-
-st.set_page_config(page_title="Catholic Sacramentals", layout="wide")
-
-# --- Load data ---
 def load_data():
-    with open(DATA_PATH, "r", encoding="utf-8") as f:
+    with open(os.path.join("data", "sacramentals.json"), "r", encoding="utf-8") as f:
         return json.load(f)
 
-# --- Save favorites ---
-def save_favorites(favs):
-    with open(FAV_PATH, "w", encoding="utf-8") as f:
-        json.dump(favs, f, indent=2)
+def safe_image(path):
+    try:
+        st.image(path, use_container_width=True)
+    except Exception:
+        st.image(os.path.join("assets", "fallback.jpg"), use_container_width=True)
 
 def main():
-    st.title("📖 Catholic Sacramentals Encyclopedia (Phase 5.2)")
+    st.set_page_config(page_title="Catholic Sacramentals Encyclopedia", layout="wide")
+    st.title("📖 Catholic Sacramentals Encyclopedia")
 
-    items = load_data()
+    data = load_data()
 
-    # Favorites
-    if "favorites" not in st.session_state:
-        st.session_state.favorites = []
+    categories = ["All"] + sorted(set(item["category"] for item in data))
+    selected_cat = st.sidebar.selectbox("Filter by Category", categories)
 
-    # Search
-    query = st.text_input("🔍 Search sacramentals (press / to focus)", key="search")
-    filtered = [i for i in items if query.lower() in i["name_en"].lower()]
-
-    # Toggle view
-    view = st.radio("View mode", ["Grid", "List"], horizontal=True)
-
-    if view == "Grid":
-        cols = st.columns(3)
-        for idx, item in enumerate(filtered):
-            with cols[idx % 3]:
-                st.image(os.path.join("assets", item["image"]), use_container_width=True)
-                st.markdown(f"**{item['name_en']}**")
-                st.caption(item['desc_en'])
-                if st.button("⭐ Favorite", key=f"fav_{idx}"):
-                    if item['name_en'] not in st.session_state.favorites:
-                        st.session_state.favorites.append(item['name_en'])
+    if selected_cat == "All":
+        filtered = data
     else:
-        for idx, item in enumerate(filtered):
-            st.image(os.path.join("assets", item["image"]), width=120)
-            st.markdown(f"### {item['name_en']}")
-            st.write(item['desc_en'])
-            if st.button("⭐ Favorite", key=f"fav_list_{idx}"):
-                if item['name_en'] not in st.session_state.favorites:
-                    st.session_state.favorites.append(item['name_en'])
+        filtered = [item for item in data if item["category"] == selected_cat]
 
-    # Favorites section
-    st.sidebar.subheader("⭐ Favorites")
-    st.sidebar.write(st.session_state.favorites)
-    if st.sidebar.button("💾 Export Favorites"):
-        save_favorites(st.session_state.favorites)
-        st.sidebar.success("Favorites exported to favorites.json")
+    for item in filtered:
+        st.subheader(item["name"])
+        img_path = os.path.join("assets", item["image"])
+        safe_image(img_path)
+        st.write(item["description"])
 
 if __name__ == "__main__":
     main()

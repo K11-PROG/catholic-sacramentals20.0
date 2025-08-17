@@ -1,17 +1,74 @@
 [
   {
-    "name_en": "Holy Water",
-    "desc_en": "Blessed water used in various rites of the Church.",
-    "image": "holy_water.jpg"
+    "name": "Holy Water",
+    "category": "Blessings",
+    "image": "holy_water.jpg",
+    "description": "Holy water is blessed by a priest and used for protection, blessings, and reminders of baptism."
   },
   {
-    "name_en": "Rosary",
-    "desc_en": "Prayer beads for meditating on the life of Christ and Mary.",
-    "image": "rosary.jpg"
+    "name": "Rosary",
+    "category": "Devotionals",
+    "image": "rosary.jpg",
+    "description": "The Rosary is a devotional prayer using beads to meditate on the mysteries of Christ."
   },
   {
-    "name_en": "Scapular",
-    "desc_en": "Cloth sacramental worn as a sign of devotion.",
-    "image": "scapular.jpg"
+    "name": "Scapular",
+    "category": "Devotionals",
+    "image": "scapular.jpg",
+    "description": "The Brown Scapular of Our Lady of Mount Carmel is a sign of devotion and protection."
+  },
+  {
+    "name": "Crucifix",
+    "category": "Symbols",
+    "image": "crucifix.jpg",
+    "description": "The crucifix is a cross with the body of Christ, a reminder of His sacrifice."
+  },
+  {
+    "name": "Medal of St. Benedict",
+    "category": "Medals",
+    "image": "st_benedict_medal.jpg",
+    "description": "The Medal of St. Benedict is used for protection against evil and temptation."
+  },
+  {
+    "name": "Palm Branches",
+    "category": "Seasonal",
+    "image": "palms.jpg",
+    "description": "Blessed palms from Palm Sunday symbolize Christ's triumphal entry into Jerusalem."
+  },
+  {
+    "name": "Ashes",
+    "category": "Seasonal",
+    "image": "ashes.jpg",
+    "description": "Ashes, imposed on Ash Wednesday, remind the faithful of mortality and repentance."
+  },
+  {
+    "name": "Candle",
+    "category": "Symbols",
+    "image": "candle.jpg",
+    "description": "Blessed candles represent Christ as the light of the world."
+  },
+  {
+    "name": "Holy Oils",
+    "category": "Blessings",
+    "image": "holy_oils.jpg",
+    "description": "Sacred oils used in sacraments such as Baptism, Confirmation, and Anointing of the Sick."
+  },
+  {
+    "name": "Agua Bendita Bottle",
+    "category": "Blessings",
+    "image": "water_bottle.jpg",
+    "description": "A small bottle for carrying holy water, often kept at home."
+  },
+  {
+    "name": "Rosary Ring",
+    "category": "Devotionals",
+    "image": "rosary_ring.jpg",
+    "description": "A small ring with ten bumps and a cross for discreet rosary prayers."
+  },
+  {
+    "name": "Incense",
+    "category": "Symbols",
+    "image": "incense.jpg",
+    "description": "Incense symbolizes prayers rising to heaven and is used in liturgical celebrations."
   }
 ]
