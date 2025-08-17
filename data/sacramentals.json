@@ -1,38 +1,17 @@
 [
-    {
-        "name": "Holy Water",
-        "description": "Water blessed by a priest used for protection and blessing.",
-        "category": "Blessed Objects",
-        "image": "holy_water.jpg"
-    },
-    {
-        "name": "Rosary",
-        "description": "A string of beads used for prayer and meditation on the life of Christ.",
-        "category": "Devotional Items",
-        "image": "rosary.jpg"
-    },
-    {
-        "name": "Scapular",
-        "description": "A devotional garment signifying dedication to Mary and Christ.",
-        "category": "Devotional Items",
-        "image": "scapular.jpg"
-    },
-    {
-        "name": "Crucifix",
-        "description": "A cross with the figure of Christ crucified, symbol of sacrifice and salvation.",
-        "category": "Blessed Objects",
-        "image": "crucifix.jpg"
-    },
-    {
-        "name": "Saint Benedict Medal",
-        "description": "A medal invoking St. Benedict\u2019s intercession for protection against evil.",
-        "category": "Devotional Items",
-        "image": "st_benedict_medal.jpg"
-    },
-    {
-        "name": "Prayer Book",
-        "description": "A book containing Catholic prayers and devotions.",
-        "category": "Prayers",
-        "image": "prayer_book.jpg"
-    }
+  {
+    "name_en": "Holy Water",
+    "desc_en": "Blessed water used in various rites of the Church.",
+    "image": "holy_water.jpg"
+  },
+  {
+    "name_en": "Rosary",
+    "desc_en": "Prayer beads for meditating on the life of Christ and Mary.",
+    "image": "rosary.jpg"
+  },
+  {
+    "name_en": "Scapular",
+    "desc_en": "Cloth sacramental worn as a sign of devotion.",
+    "image": "scapular.jpg"
+  }
 ]
