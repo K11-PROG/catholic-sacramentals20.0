@@ -1,0 +1,388 @@
+{
+  "ui": {
+    "en": {
+      "title": "Catholic Sacramentals Encyclopedia",
+      "search": "Search",
+      "category": "Category",
+      "all": "All",
+      "favorites": "Favorites",
+      "add_fav": "Add to Favorites",
+      "remove_fav": "Remove Favorite",
+      "export": "Export Favorites",
+      "share": "Share Favorites",
+      "view": "View"
+    },
+    "fr": {
+      "title": "Encyclopédie des sacramentaux",
+      "search": "Rechercher",
+      "category": "Catégorie",
+      "all": "Toutes",
+      "favorites": "Favoris",
+      "add_fav": "Ajouter aux favoris",
+      "remove_fav": "Retirer des favoris",
+      "export": "Exporter Favoris",
+      "share": "Partager Favoris",
+      "view": "Vue"
+    },
+    "es": {
+      "title": "Enciclopedia de sacramentales",
+      "search": "Buscar",
+      "category": "Categoría",
+      "all": "Todas",
+      "favorites": "Favoritos",
+      "add_fav": "Agregar a Favoritos",
+      "remove_fav": "Quitar Favorito",
+      "export": "Exportar Favoritos",
+      "share": "Compartir Favoritos",
+      "view": "Vista"
+    },
+    "it": {
+      "title": "Enciclopedia dei sacramentali",
+      "search": "Cerca",
+      "category": "Categoria",
+      "all": "Tutte",
+      "favorites": "Preferiti",
+      "add_fav": "Aggiungi ai preferiti",
+      "remove_fav": "Rimuovi Preferito",
+      "export": "Esporta Preferiti",
+      "share": "Condividi Preferiti",
+      "view": "Vista"
+    },
+    "tl": {
+      "title": "Ensiklopedya ng mga Sakramental",
+      "search": "Hanapin",
+      "category": "Kategorya",
+      "all": "Lahat",
+      "favorites": "Paborito",
+      "add_fav": "Idagdag sa Paborito",
+      "remove_fav": "Tanggalin sa Paborito",
+      "export": "I-export ang Paborito",
+      "share": "Ibahagi ang Paborito",
+      "view": "Tingnan"
+    }
+  },
+  "items": {
+    "holy-water": {
+      "fr": {
+        "name": "Holy Water"
+      },
+      "es": {
+        "name": "Holy Water"
+      },
+      "it": {
+        "name": "Holy Water"
+      },
+      "tl": {
+        "name": "Holy Water"
+      }
+    },
+    "rosary": {
+      "fr": {
+        "name": "Rosary"
+      },
+      "es": {
+        "name": "Rosary"
+      },
+      "it": {
+        "name": "Rosary"
+      },
+      "tl": {
+        "name": "Rosary"
+      }
+    },
+    "brown-scapular": {
+      "fr": {
+        "name": "Brown Scapular"
+      },
+      "es": {
+        "name": "Brown Scapular"
+      },
+      "it": {
+        "name": "Brown Scapular"
+      },
+      "tl": {
+        "name": "Brown Scapular"
+      }
+    },
+    "crucifix": {
+      "fr": {
+        "name": "Crucifix"
+      },
+      "es": {
+        "name": "Crucifix"
+      },
+      "it": {
+        "name": "Crucifix"
+      },
+      "tl": {
+        "name": "Crucifix"
+      }
+    },
+    "miraculous-medal": {
+      "fr": {
+        "name": "Miraculous Medal"
+      },
+      "es": {
+        "name": "Miraculous Medal"
+      },
+      "it": {
+        "name": "Miraculous Medal"
+      },
+      "tl": {
+        "name": "Miraculous Medal"
+      }
+    },
+    "st-benedict-medal": {
+      "fr": {
+        "name": "St. Benedict Medal"
+      },
+      "es": {
+        "name": "St. Benedict Medal"
+      },
+      "it": {
+        "name": "St. Benedict Medal"
+      },
+      "tl": {
+        "name": "St. Benedict Medal"
+      }
+    },
+    "holy-cards": {
+      "fr": {
+        "name": "Holy Cards"
+      },
+      "es": {
+        "name": "Holy Cards"
+      },
+      "it": {
+        "name": "Holy Cards"
+      },
+      "tl": {
+        "name": "Holy Cards"
+      }
+    },
+    "palm-branches": {
+      "fr": {
+        "name": "Palm Branches"
+      },
+      "es": {
+        "name": "Palm Branches"
+      },
+      "it": {
+        "name": "Palm Branches"
+      },
+      "tl": {
+        "name": "Palm Branches"
+      }
+    },
+    "ashes": {
+      "fr": {
+        "name": "Ashes (Ash Wednesday)"
+      },
+      "es": {
+        "name": "Ashes (Ash Wednesday)"
+      },
+      "it": {
+        "name": "Ashes (Ash Wednesday)"
+      },
+      "tl": {
+        "name": "Ashes (Ash Wednesday)"
+      }
+    },
+    "candle": {
+      "fr": {
+        "name": "Blessed Candle"
+      },
+      "es": {
+        "name": "Blessed Candle"
+      },
+      "it": {
+        "name": "Blessed Candle"
+      },
+      "tl": {
+        "name": "Blessed Candle"
+      }
+    },
+    "incense": {
+      "fr": {
+        "name": "Incense"
+      },
+      "es": {
+        "name": "Incense"
+      },
+      "it": {
+        "name": "Incense"
+      },
+      "tl": {
+        "name": "Incense"
+      }
+    },
+    "holy-oils": {
+      "fr": {
+        "name": "Holy Oils"
+      },
+      "es": {
+        "name": "Holy Oils"
+      },
+      "it": {
+        "name": "Holy Oils"
+      },
+      "tl": {
+        "name": "Holy Oils"
+      }
+    },
+    "agnus-dei": {
+      "fr": {
+        "name": "Agnus Dei (wax)"
+      },
+      "es": {
+        "name": "Agnus Dei (wax)"
+      },
+      "it": {
+        "name": "Agnus Dei (wax)"
+      },
+      "tl": {
+        "name": "Agnus Dei (wax)"
+      }
+    },
+    "salt": {
+      "fr": {
+        "name": "Blessed Salt"
+      },
+      "es": {
+        "name": "Blessed Salt"
+      },
+      "it": {
+        "name": "Blessed Salt"
+      },
+      "tl": {
+        "name": "Blessed Salt"
+      }
+    },
+    "rosary-ring": {
+      "fr": {
+        "name": "Rosary Ring"
+      },
+      "es": {
+        "name": "Rosary Ring"
+      },
+      "it": {
+        "name": "Rosary Ring"
+      },
+      "tl": {
+        "name": "Rosary Ring"
+      }
+    },
+    "st-joseph-medal": {
+      "fr": {
+        "name": "St. Joseph Medal"
+      },
+      "es": {
+        "name": "St. Joseph Medal"
+      },
+      "it": {
+        "name": "St. Joseph Medal"
+      },
+      "tl": {
+        "name": "St. Joseph Medal"
+      }
+    },
+    "st-michael-medal": {
+      "fr": {
+        "name": "St. Michael Medal"
+      },
+      "es": {
+        "name": "St. Michael Medal"
+      },
+      "it": {
+        "name": "St. Michael Medal"
+      },
+      "tl": {
+        "name": "St. Michael Medal"
+      }
+    },
+    "guadalupe-medal": {
+      "fr": {
+        "name": "Our Lady of Guadalupe Medal"
+      },
+      "es": {
+        "name": "Our Lady of Guadalupe Medal"
+      },
+      "it": {
+        "name": "Our Lady of Guadalupe Medal"
+      },
+      "tl": {
+        "name": "Our Lady of Guadalupe Medal"
+      }
+    },
+    "st-christopher-medal": {
+      "fr": {
+        "name": "St. Christopher Medal"
+      },
+      "es": {
+        "name": "St. Christopher Medal"
+      },
+      "it": {
+        "name": "St. Christopher Medal"
+      },
+      "tl": {
+        "name": "St. Christopher Medal"
+      }
+    },
+    "stations-of-the-cross": {
+      "fr": {
+        "name": "Stations of the Cross booklet"
+      },
+      "es": {
+        "name": "Stations of the Cross booklet"
+      },
+      "it": {
+        "name": "Stations of the Cross booklet"
+      },
+      "tl": {
+        "name": "Stations of the Cross booklet"
+      }
+    },
+    "holy-card": {
+      "fr": {
+        "name": "Holy Card (expanded)"
+      },
+      "es": {
+        "name": "Holy Card (expanded)"
+      },
+      "it": {
+        "name": "Holy Card (expanded)"
+      },
+      "tl": {
+        "name": "Holy Card (expanded)"
+      }
+    },
+    "exorcism-crucifix": {
+      "fr": {
+        "name": "Exorcism Crucifix"
+      },
+      "es": {
+        "name": "Exorcism Crucifix"
+      },
+      "it": {
+        "name": "Exorcism Crucifix"
+      },
+      "tl": {
+        "name": "Exorcism Crucifix"
+      }
+    },
+    "processional-cross": {
+      "fr": {
+        "name": "Processional Cross"
+      },
+      "es": {
+        "name": "Processional Cross"
+      },
+      "it": {
+        "name": "Processional Cross"
+      },
+      "tl": {
+        "name": "Processional Cross"
+      }
+    }
+  }
+}

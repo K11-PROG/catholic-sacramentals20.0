@@ -1,16 +1,11 @@
-# Catholic Sacramentals – Phase 5.3 (Light)
+# Catholic Sacramentals — Full
 
-- 12 core sacramentals with structured mini-encyclopedia fields
-- Card layout in Streamlit
-- Safe image handling with `assets/fallback.jpg`
-- Compact, valid JPGs
+Phase: Full release with 24 sacramentals, multilingual UI (EN/FR/ES/IT/TL),
+search + category filter, grid/list views, favorites with export/share token,
+auto-language detection, and safe image handling (fallback).
 
 ## Run locally
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
-## Deploy on Streamlit Cloud
-- Push folder to GitHub
-- Set entrypoint to `app.py`
