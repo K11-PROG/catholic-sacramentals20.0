@@ -1,86 +1,169 @@
 [
   {
     "slug": "holy-water",
-    "name": "Holy Water",
+    "title": "Holy Water",
     "category": "Blessings",
-    "image": "holy_water.png",
-    "description": "Water blessed by a priest or deacon, used for making the Sign of the Cross, blessing persons and homes, and recalling Baptism. Attested in the Church by the 2nd–3rd centuries; formulas varied regionally. Variations: Easter Water (Easter Vigil) and water with blessed salt."
-  },
-  {
-    "slug": "rosary",
-    "name": "Rosary",
-    "category": "Devotional Articles",
-    "image": "rosary.png",
-    "description": "Beads used to count prayers and meditate on the mysteries of Christ. Tradition links popularization to St. Dominic (13th c.), though it developed from earlier prayer practices. Forms: Dominican Rosary, Franciscan Crown, many chaplets."
-  },
-  {
-    "slug": "brown-scapular",
-    "name": "Brown Scapular",
-    "category": "Devotional Articles",
-    "image": "scapular_brown.png",
-    "description": "A reduced form of the Carmelite habit worn as a sign of devotion to Our Lady of Mount Carmel. Widely adopted from the 13th century onward. Other scapulars exist with distinct promises and spirituality."
-  },
-  {
-    "slug": "miraculous-medal",
-    "name": "Miraculous Medal",
-    "category": "Medals",
-    "image": "miraculous_medal.png",
-    "description": "Revealed to St. Catherine Labouré in 1830 (Paris), bearing symbols of Mary's intercession and Christ's redemption. Spread rapidly for its associated graces. Designs and inscriptions vary by language/region."
+    "image": "holy_water.jpg",
+    "summary": "Blessed water recalling Baptism; used for protection, purification, and blessings.",
+    "history": "Documented use by the early Church (4th–5th c.); linked to baptismal liturgies; aspersion rites widespread by the Middle Ages.",
+    "theology": "Sacramental sign; not a sacrament; by the Church’s prayer it disposes to grace and protection against evil; recalls baptismal dignity.",
+    "usage": [
+      "Blessing oneself on entering a church",
+      "Sprinkling homes, devotional objects",
+      "Rite of Aspersion on Sundays"
+    ],
+    "notes": "Often contains blessed salt in some rites; local customs vary."
   },
   {
     "slug": "crucifix",
-    "name": "Crucifix",
-    "category": "Sacred Objects",
-    "image": "crucifix.png",
-    "description": "A cross with the corpus of Jesus, used since early Christianity as a reminder of the Passion. Found in churches, homes, and worn as pendants. Notable forms include the San Damiano cross and Byzantine styles."
+    "title": "Crucifix",
+    "category": "Devotional Objects",
+    "image": "crucifix.jpg",
+    "summary": "A cross bearing the corpus of Christ; focus of Christian meditation on the Passion.",
+    "history": "Use of the cross dates to the apostolic age; crucifixes prominent by 6th–7th c.; Council of Trent affirmed veneration of sacred images (1545–1563).",
+    "theology": "Points to the one sacrifice of Christ; images receive relative honor (dulia); worship is to God alone.",
+    "usage": [
+      "Home walls, processions, rosaries",
+      "Kissing the crucifix during devotions"
+    ],
+    "notes": "Eastern Christians often use an icon cross; forms and styles vary widely."
   },
   {
-    "slug": "benedict-medal",
-    "name": "Saint Benedict Medal",
+    "slug": "rosary",
+    "title": "Rosary",
+    "category": "Devotional Prayer",
+    "image": "rosary.jpg",
+    "summary": "Beads guiding meditation on the life of Christ through Marian prayer.",
+    "history": "Current form stabilized by 15th–16th c.; tradition links earlier promotion to St. Dominic (13th c.); numerous papal endorsements.",
+    "theology": "Contemplative Christocentric prayer; sacramental when blessed; aids meditation on the mysteries of salvation.",
+    "usage": [
+      "Daily prayer",
+      "Family rosary",
+      "Processions and pilgrimages"
+    ],
+    "notes": "Many forms exist (Dominican, Franciscan Crown, Scriptural Rosary)."
+  },
+  {
+    "slug": "brown-scapular",
+    "title": "Brown Scapular",
+    "category": "Devotional Garments",
+    "image": "brown_scapular.jpg",
+    "summary": "Woolen bands worn over shoulders as a sign of Marian devotion and discipleship.",
+    "history": "Associated with Carmelites (13th c.); widespread by late Middle Ages; regulations developed for enrollment and devout wearing.",
+    "theology": "A sign of consecration to Mary; sacramental attached to the Carmelite family; encourages imitation of Mary’s virtues.",
+    "usage": [
+      "Enrollment by a priest/deacon",
+      "Daily wearing with devotion"
+    ],
+    "notes": "Different scapulars exist (e.g., Red, Green, Five-Fold)."
+  },
+  {
+    "slug": "st-benedict-medal",
+    "title": "Medal of St. Benedict",
     "category": "Medals",
-    "image": "benedict_medal.png",
-    "description": "A devotional medal bearing initials of Latin prayers associated with St. Benedict. Promoted especially since the 17th c.; the Jubilee Medal (1880) standardized the design. Used with faith for protection."
-  },
-  {
-    "slug": "holy-cards",
-    "name": "Holy Cards",
-    "category": "Devotional Articles",
-    "image": "holy_cards.png",
-    "description": "Small images of Christ, the Virgin Mary, or saints—often with prayers—popular since the 19th–20th c. with advances in printing. Used as keepsakes, catechetical aids, and memorials."
+    "image": "st_benedict_medal.jpg",
+    "summary": "Medal bearing Benedictine symbols and exorcistic inscriptions.",
+    "history": "Forms attested since the 17th c.; Jubilee medal approved 1880 for St. Benedict’s 1400th anniversary.",
+    "theology": "By the Church’s blessing it becomes a sacramental of protection; inscriptions invoke the Cross of Christ.",
+    "usage": [
+      "Worn or placed in homes",
+      "Often paired with a crucifix (Benedictine cross)"
+    ],
+    "notes": "Requires a specific blessing (older rite has an exorcism formula)."
   },
   {
     "slug": "blessed-salt",
-    "name": "Blessed Salt",
+    "title": "Blessed Salt",
     "category": "Blessings",
-    "image": "blessed_salt.png",
-    "description": "Salt blessed with particular prayers, recalling biblical symbolism of preservation and covenant. Traditionally mixed with holy water or sprinkled for protection and sanctification."
+    "image": "blessed_salt.jpg",
+    "summary": "Salt blessed for use in exorcisms and house blessings; recalls preservative and purifying symbolism.",
+    "history": "Biblical usage (2 Kings 2:19–22); used in Roman liturgical books; sometimes added to holy water.",
+    "theology": "Sacramental of protection and purification through the Church’s prayer.",
+    "usage": [
+      "Sprinkled at thresholds",
+      "Mixed into holy water (traditional)"
+    ],
+    "notes": "Use varies by pastoral norms; not for superstitious use."
+  },
+  {
+    "slug": "holy-oils",
+    "title": "Holy Oils",
+    "category": "Liturgical Objects",
+    "image": "holy_oils.jpg",
+    "summary": "Chrism, Oil of Catechumens, and Oil of the Sick; blessed by the bishop at the Chrism Mass.",
+    "history": "Attested since apostolic times; systematic diocesan blessing by late antiquity.",
+    "theology": "Used in sacraments; as blessed substances they also function as sacramentals when venerated and handled reverently.",
+    "usage": [
+      "Anointing of the Sick",
+      "Baptismal and confirmation rites"
+    ],
+    "notes": "Stored in ambry; renewed annually in Holy Week."
+  },
+  {
+    "slug": "agnus-dei",
+    "title": "Agnus Dei Wax Medallions",
+    "category": "Devotional Objects",
+    "image": "agnus_dei.jpg",
+    "summary": "Wax disks impressed with the Lamb of God; historically blessed by Popes in Eastertide.",
+    "history": "Medieval origin; custom flourished in Renaissance/Baroque eras; production ceased in 20th c.",
+    "theology": "Sacramental associated with Paschal mysteries and protection.",
+    "usage": [
+      "Worn or kept in homes as a keepsake"
+    ],
+    "notes": "Historical devotional; rare today."
   },
   {
     "slug": "incense",
-    "name": "Incense",
-    "category": "Liturgy",
-    "image": "incense.png",
-    "description": "Resins burned as a sign of prayer rising to God (Ps 141:2). Used in East and West from antiquity. Blends vary by tradition; usage is governed by liturgical norms."
+    "title": "Incense",
+    "category": "Liturgical Objects",
+    "image": "incense.jpg",
+    "summary": "Aromatic resin burned as an offering and sign of prayer rising to God.",
+    "history": "Biblical roots (Ps 141:2; Rev 8:3–4); in Christian liturgy since early centuries.",
+    "theology": "Symbolizes reverence and prayer; blessing makes it a sacramental for worship.",
+    "usage": [
+      "Mass, Benediction, processions"
+    ],
+    "notes": "Frankincense and myrrh among common blends."
   },
   {
-    "slug": "blessed-candle",
-    "name": "Blessed Candle",
-    "category": "Liturgy",
-    "image": "candle.png",
-    "description": "Candles blessed on feast days (notably Candlemas, Feb 2) symbolize Christ the Light. Used in processions, blessings, and home devotion. Beeswax content and decoration can differ."
-  },
-  {
-    "slug": "oil-of-the-sick",
-    "name": "Oil of the Sick (Oleum Infirmorum)",
+    "slug": "palms",
+    "title": "Palms (Palm Sunday)",
     "category": "Blessings",
-    "image": "oil_sick.png",
-    "description": "Olive or other plant oil sanctified by the bishop for the Sacrament of the Anointing of the Sick. As a sacred matter used in a Sacrament, it is distinct yet historically connected to blessed oils used devotionally."
+    "image": "palms.jpg",
+    "summary": "Blessed branches commemorating Christ’s entry into Jerusalem.",
+    "history": "Attested in Jerusalem (4th c.); spread throughout the Church by the Middle Ages.",
+    "theology": "Signs of victory and discipleship; kept in homes as a sacramental.",
+    "usage": [
+      "Processions on Palm Sunday",
+      "Placed behind crucifixes at home"
+    ],
+    "notes": "Ashes often made from last year’s palms."
   },
   {
-    "slug": "saint-medals",
-    "name": "Saint Medals (various)",
-    "category": "Medals",
-    "image": "medal_saint.png",
-    "description": "Medals depicting particular saints (e.g., St. Michael, St. Joseph) worn as reminders of their intercession. Designs differ by culture; inscriptions often localize prayers or titles."
+    "slug": "ashes",
+    "title": "Ashes (Ash Wednesday)",
+    "category": "Blessings",
+    "image": "ashes.jpg",
+    "summary": "Blessed ashes placed on the faithful as a sign of repentance.",
+    "history": "Public penance rites in the early Church; general imposition by the Middle Ages.",
+    "theology": "Reminder of mortality and call to conversion; a sacramental of penance.",
+    "usage": [
+      "Ash Wednesday liturgy"
+    ],
+    "notes": "Formulae: “Remember you are dust…” or “Repent and believe the Gospel.”"
+  },
+  {
+    "slug": "candles",
+    "title": "Candles",
+    "category": "Blessings",
+    "image": "candles.jpg",
+    "summary": "Blessed candles (esp. at Candlemas) used in liturgy and homes; Paschal candle in Easter Vigil.",
+    "history": "Widespread by late antiquity; Candlemas blessing (Feb 2) antiquity/medieval roots.",
+    "theology": "Christ the Light; blessed candles carry sacramental significance.",
+    "usage": [
+      "Processions, home prayer corners",
+      "Sacraments and funerals"
+    ],
+    "notes": "Beeswax has symbolic purity; Paschal candle renewed yearly."
   }
 ]
