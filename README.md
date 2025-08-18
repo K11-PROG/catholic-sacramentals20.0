@@ -1,16 +1,14 @@
-# Catholic Sacramentals Encyclopedia (Phase 5.3+)
 
-A Streamlit app showcasing the 12 core Catholic sacramentals with historical notes, images, and background stories.
+# Catholic Sacramentals Encyclopedia
+
+Streamlit app displaying core Catholic sacramentals with descriptions and images.
+
+## Deployment
+- Run locally: `streamlit run app.py`
+- Deploy to Streamlit Cloud, Vercel, or Netlify.
+- Assets stored in `/assets`. Missing ones fallback to `placeholder.jpg`.
 
 ## Features
-- Parchment-style UI
-- Safe image loader (no crashes if image missing)
-- Placeholder fallback image
-- Extended historical explanations for each sacramental
-- Ready for deployment on Streamlit Cloud, Vercel, or Netlify
-
-## Run locally
-```bash
-pip install streamlit pillow
-streamlit run app.py
-```
+- Parchment-style background
+- Card layout (2 columns)
+- Placeholder images (no errors)
