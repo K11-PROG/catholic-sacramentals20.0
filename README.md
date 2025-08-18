@@ -1,11 +1,13 @@
-# Catholic Sacramentals — Full
+# Catholic Sacramentals Encyclopedia (Phase 5.3)
 
-Phase: Full release with 24 sacramentals, multilingual UI (EN/FR/ES/IT/TL),
-search + category filter, grid/list views, favorites with export/share token,
-auto-language detection, and safe image handling (fallback).
+📜 A multilingual Streamlit app with a parchment-style theme, showing Catholic sacramentals with descriptions, translations, and images.
 
-## Run locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+## Features
+- Multilingual support (EN, FR, ES, IT, TL)
+- Card layout with parchment background
+- Core 12 sacramentals (2 included, extendable)
+- Graceful fallback if images are missing
+- Ready for deployment on Streamlit Cloud / Vercel / Netlify
+
+---
+🙏 Deo Gratias

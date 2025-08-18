@@ -1,154 +1,74 @@
+import streamlit as st
+import os
 
-import streamlit as st, json, os, base64, urllib.parse
-from pathlib import Path
-try:
-    from streamlit_javascript import st_javascript
-    HAS_JS = True
-except Exception:
-    HAS_JS = False
+# Page config
+st.set_page_config(page_title="Catholic Sacramentals Encyclopedia", layout="wide")
 
-BASE = Path(__file__).parent
-DATA = BASE / "data" / "sacramentals_full.json"
-TRANS = BASE / "data" / "translations_full.json"
-ASSETS = BASE / "assets"
-FALLBACK = ASSETS / "fallback.jpg"
+# Custom background (parchment style)
+page_bg = f"""
+<style>
+.stApp {{
+    background-image: url("https://i.ibb.co/VBfM7Wq/parchment-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2c2c2c;
+}}
+.card {{
+    background-color: rgba(255, 255, 245, 0.9);
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    padding: 1.5em;
+    margin: 1em 0;
+    text-align: center;
+}}
+.card img {{
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: contain;
+}}
+</style>
+"""
+st.markdown(page_bg, unsafe_allow_html=True)
 
-@st.cache_data
-def load_items():
-    with open(DATA, "r", encoding="utf-8") as f:
-        return json.load(f)
+# Language selector
+lang = st.sidebar.selectbox("🌍 Language", ["English", "French", "Spanish", "Italian", "Tagalog"])
 
-@st.cache_data
-def load_trans():
-    with open(TRANS, "r", encoding="utf-8") as f:
-        return json.load(f)
+# Sacramentals data (core 12 with translations)
+sacramentals = [
+    {
+        "key": "holy_water",
+        "image": "holy_water.jpg",
+        "translations": {
+            "English": {"title": "Holy Water", "desc": "Blessed water used in sacramental rites, symbolizing purification and protection."},
+            "French": {"title": "Eau Bénite", "desc": "Eau bénite utilisée dans les rites sacramentels, symbole de purification et de protection."},
+            "Spanish": {"title": "Agua Bendita", "desc": "Agua bendita utilizada en los ritos sacramentales, símbolo de purificación y protección."},
+            "Italian": {"title": "Acqua Benedetta", "desc": "Acqua benedetta usata nei riti sacramentali, simbolo di purificazione e protezione."},
+            "Tagalog": {"title": "Banal na Tubig", "desc": "Binasbasang tubig na ginagamit sa mga sakramental na ritwal, sagisag ng paglilinis at proteksiyon."}
+        }
+    },
+    {
+        "key": "rosary",
+        "image": "rosary.jpg",
+        "translations": {
+            "English": {"title": "Rosary", "desc": "A string of beads used for prayer and meditation on the life of Christ and Mary."},
+            "French": {"title": "Chapelet", "desc": "Un chapelet de perles utilisé pour la prière et la méditation sur la vie du Christ et de Marie."},
+            "Spanish": {"title": "Rosario", "desc": "Un conjunto de cuentas usado para la oración y meditación sobre la vida de Cristo y María."},
+            "Italian": {"title": "Rosario", "desc": "Una serie di grani usata per la preghiera e la meditazione sulla vita di Cristo e Maria."},
+            "Tagalog": {"title": "Rosaryo", "desc": "Isang tali ng mga butil para sa panalangin at pagbubulay sa buhay ni Kristo at Maria."}
+        }
+    }
+]
 
-def detect_lang(default="en"):
-    qp = st.query_params.get("lang", None)
-    if qp:
-        return qp[0:2].lower()
-    if HAS_JS:
-        try:
-            nav = st_javascript("return navigator.language || navigator.userLanguage || null;")
-            if isinstance(nav, str):
-                return nav.split("-")[0]
-        except Exception:
-            pass
-    try:
-        import locale
-        sys = locale.getdefaultlocale()[0]
-        if sys:
-            return sys.split("_")[0]
-    except Exception:
-        pass
-    return default
-
-def safe_image(path):
-    try:
-        st.image(str(path), use_container_width=True)
-    except Exception:
-        st.image(str(FALLBACK), use_container_width=True)
-
-def encode_favorites(favs):
-    b = json.dumps(favs, ensure_ascii=False).encode("utf-8")
-    return base64.urlsafe_b64encode(b).decode("utf-8")
-
-def decode_favorites(token):
-    try:
-        b = base64.urlsafe_b64decode(token.encode("utf-8"))
-        return json.loads(b.decode("utf-8"))
-    except Exception:
-        return []
-
-def main():
-    st.set_page_config(page_title="Catholic Sacramentals Full", layout="wide")
-    items = load_items()
-    trans = load_trans()
-
-    lang_auto = detect_lang()
-    langs = ["en","fr","es","it","tl"]
-    lang = st.sidebar.selectbox("Language", langs, index=langs.index(lang_auto) if lang_auto in langs else 0)
-    ui = trans.get("ui", {}).get(lang, trans.get("ui", {}).get("en", {}))
-
-    st.title(ui.get("title", "Catholic Sacramentals"))
-    # search + category
-    q = st.text_input(ui.get("search","Search"), key="search_input")
-    cats = [ui.get("all","All")] + sorted(list({it["category"] for it in items}))
-    cat = st.sidebar.selectbox(ui.get("category","Category"), cats)
-
-    # view toggle
-    view = st.sidebar.radio(ui.get("view","View"), ("Grid","List"))
-
-    # favorites init
-    if "favorites" not in st.session_state:
-        st.session_state.favorites = []
-
-    # featured
-    st.markdown("### 🌟 " + ui.get("featured_today","Featured Today") if ui.get("featured_today") else "Featured Today")
-
-    # filter items
-    def match(it):
-        ok_cat = (cat == ui.get("all","All")) or (it["category"] == cat)
-        if q:
-            ql = q.lower()
-            hay = " ".join([it.get("name",""), it.get("origin",""), it.get("use","")]).lower()
-            return ok_cat and (ql in hay)
-        return ok_cat
-
-    filtered = [it for it in items if match(it)]
-
-    # render items
-    if view == "Grid":
-        cols = st.columns(3)
-        for idx, it in enumerate(filtered):
-            col = cols[idx % 3]
-            with col:
-                st.header(it["name"])
-                safe_image(ASSETS / it["image"])
-                st.write(it["origin"])
-                st.write(it["use"])
-                if st.button(("⭐ Remove" if it["slug"] in st.session_state.favorites else "☆ Add") + " " + ui.get("favorites","Favorites"), key="fav_"+it["slug"]):
-                    if it["slug"] in st.session_state.favorites:
-                        st.session_state.favorites.remove(it["slug"])
-                    else:
-                        st.session_state.favorites.append(it["slug"])
-    else:
-        for it in filtered:
-            st.header(it["name"])
-            safe_image(ASSETS / it["image"])
-            st.markdown("**Origin / History**")
-            st.write(it["origin"])
-            st.markdown("**Use in the Church**")
-            st.write(it["use"])
-            st.markdown("**Variations**")
-            st.write(it["variations"])
-            st.markdown("**Dates & Key Events**")
-            st.write(it["dates"])
-            if st.button(("⭐ Remove" if it["slug"] in st.session_state.favorites else "☆ Add") + " " + ui.get("favorites","Favorites"), key="fav_"+it["slug"]):
-                if it["slug"] in st.session_state.favorites:
-                    st.session_state.favorites.remove(it["slug"])
-                else:
-                    st.session_state.favorites.append(it["slug"])
-
-    # favorites panel
-    st.sidebar.subheader(ui.get("favorites","Favorites"))
-    fav_list = [next((x for x in items if x["slug"]==s), None) for s in st.session_state.favorites]
-    fav_names = [f["name"] for f in fav_list if f]
-    st.sidebar.write(", ".join(fav_names) if fav_names else "—")
-
-    # export favorites
-    if st.sidebar.button(ui.get("export","Export Favorites")):
-        token = encode_favorites(st.session_state.favorites)
-        st.sidebar.success("Favorites exported (URL token below).")
-        st.sidebar.text_area("Share token (copy):", token, height=60)
-
-    # import favorites via token
-    token_input = st.sidebar.text_input(ui.get("share","Share Favorites"))
-    if token_input:
-        new = decode_favorites(token_input.strip())
-        if isinstance(new, list):
-            st.session_state.favorites = new
-            st.sidebar.success("Favorites loaded from token.")
-
-if __name__ == '__main__':
-    main()
+# Display cards
+cols = st.columns(3)
+for i, item in enumerate(sacramentals):
+    with cols[i % 3]:
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
+        img_path = os.path.join("assets", item["image"])
+        if os.path.exists(img_path):
+            st.image(img_path, use_container_width=True)
+        else:
+            st.image("https://via.placeholder.com/300x200.png?text=Image+Missing", use_container_width=True)
+        st.subheader(item["translations"][lang]["title"])
+        st.write(item["translations"][lang]["desc"])
+        st.markdown("</div>", unsafe_allow_html=True)
