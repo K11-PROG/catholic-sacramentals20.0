@@ -1,94 +1,54 @@
 import streamlit as st
-from pathlib import Path
-import base64
-from PIL import Image, UnidentifiedImageError
-import io
+import os
 
 st.set_page_config(page_title="Catholic Sacramentals", layout="wide")
 
-# Paths
-ASSETS = Path(__file__).parent / "assets"
-BG = ASSETS / "bg_stained.jpg"
-PLACEHOLDER = ASSETS / "placeholder.jpg"
+# CSS for background and glassmorphism
+st.markdown(
+    f"""
+    <style>
+    body {{
+        background-image: url('assets/stained_glass.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }}
+    .glass-bar {{
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c2c2c;
+    }}
+    .sacramental-card {{
+        background: rgba(255, 255, 255, 0.55);
+        border-radius: 16px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 20px;
+        margin: 15px;
+        color: #1a1a1a;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }}
+    </style>
+    <div class="glass-bar">✨ Catholic Sacramentals Encyclopedia ✨</div>
+    """,
+    unsafe_allow_html=True
+)
 
-# Load background and inject CSS into .stAppViewContainer
-def load_bg():
-    if BG.exists():
-        try:
-            data = base64.b64encode(BG.read_bytes()).decode()
-            st.markdown(f'''
-                <style>
-                [data-testid="stAppViewContainer"] {{
-                  background-image: url("data:image/jpeg;base64,{data}");
-                  background-size: cover;
-                  background-position: center;
-                  background-attachment: fixed;
-                }}
-                .glass-card {{
-                  background: rgba(255, 255, 255, 0.2);
-                  backdrop-filter: blur(10px);
-                  -webkit-backdrop-filter: blur(10px);
-                  border-radius: 18px;
-                  padding: 20px;
-                  margin-bottom: 20px;
-                  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-                  border: 1px solid rgba(255, 255, 255, 0.3);
-                }}
-                .glass-top {{
-                  background: rgba(255, 255, 255, 0.25);
-                  backdrop-filter: blur(12px);
-                  -webkit-backdrop-filter: blur(12px);
-                  border-radius: 18px;
-                  padding: 20px;
-                  margin-bottom: 25px;
-                  text-align: center;
-                  font-size: 2rem;
-                  font-weight: bold;
-                  color: #212121;
-                }}
-                </style>
-            ''', unsafe_allow_html=True)
-            return
-        except Exception:
-            pass
-    # Fallback (plain background)
-    st.markdown("""
-        <style>
-        [data-testid="stAppViewContainer"] { background-color: #f3ecdb; }
-        .glass-card, .glass-top { background: white; padding: 1rem; border-radius: 10px; }
-        </style>
-    """, unsafe_allow_html=True)
-
-# Safe image loader
-def safe_image(name):
-    img_path = ASSETS / name
-    try:
-        img = Image.open(img_path)
-    except Exception:
-        try:
-            img = Image.open(PLACEHOLDER)
-        except Exception:
-            st.info(f"Missing image: {name}")
-            return
-    st.image(img, use_container_width=True)
-
-# Run
-load_bg()
-st.markdown('<div class="glass-top">Catholic Sacramentals Encyclopedia</div>', unsafe_allow_html=True)
-
-items = [
-    {"name": "Holy Water", "desc": "Water blessed by a priest, used for protection and blessings.", "img": "holy_water.jpg"},
-    {"name": "Rosary", "desc": "Beads used to meditate on the mysteries of Christ and Mary.", "img": "rosary.jpg"},
-    {"name": "Scapular", "desc": "A devotional garment signifying consecration to Mary.", "img": "scapular.jpg"},
-    {"name": "Crucifix", "desc": "Cross bearing Jesus, reminding us of His passion and love.", "img": "crucifix.jpg"},
+sacramentals = [
+    {"name": "Holy Water", "desc": "Blessed water used for protection, blessings, and reminding of baptism.", "image": "placeholder.jpg"},
+    {"name": "Rosary", "desc": "A prayer rope with beads, used for meditative prayer to Mary and Christ.", "image": "placeholder.jpg"},
+    {"name": "Scapular", "desc": "A devotional garment symbolizing consecration to Mary and trust in her protection.", "image": "placeholder.jpg"},
 ]
 
-# Responsive card layout
-cols = st.columns(2)
-for i, itm in enumerate(items):
-    with cols[i % 2]:
-        st.markdown('<div class="glass-card">', unsafe_allow_html=True)
-        safe_image(itm["img"])
-        st.subheader(itm["name"])
-        st.write(itm["desc"])
-        st.markdown('</div>', unsafe_allow_html=True)
+cols = st.columns(3)
+for idx, item in enumerate(sacramentals):
+    with cols[idx % 3]:
+        st.markdown(f"<div class='sacramental-card'><h3>{item['name']}</h3><p>{item['desc']}</p></div>", unsafe_allow_html=True)
+        img_path = os.path.join("assets", item["image"])
+        st.image(img_path, use_container_width=True)
